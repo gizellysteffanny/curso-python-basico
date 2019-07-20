@@ -1,7 +1,15 @@
+from datetime import date
 from typing import List
 from projeto2.models import Person
 
 DATABASE = 'C:/Users/admin/Documents/classroom/curso_python/projeto2/database.txt'
+
+
+def str_to_date(date_as_str):
+    year = int(date_as_str.split('-')[0])
+    month = int(date_as_str.split('-')[1])
+    day = int(date_as_str.split('-')[2])
+    return date(year=year, month=month, day=day)
 
 
 def transform_in_line(person: Person):

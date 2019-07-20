@@ -12,11 +12,11 @@ def main():
         option = int(input('Input your choice: '))
 
         if option == 1:
-            employee = Person(
+            person = Person(
                 id=int(input('Id: ')),
                 name=input('Name: ')
             )
-            add_person(path_file=DATABASE, person=Person)
+            add_person(path_file=DATABASE, person=person)
         elif option == 2:
             employees = obtains_people(DATABASE)
             for e in employees:
